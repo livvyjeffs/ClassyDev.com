@@ -26,10 +26,10 @@
 
                 <div id="nav" class="grid_9 omega">
                     <ul class="navigation">
-                        <li class="navlink" data-slide="2">About Us</li>
-                        <li class="navlink" data-slide="3">Our Process</li>
-                        <li class="navlink" data-slide="4">Startups</li>
-                        <li class="navlink" data-slide="5">Portfolio</li>
+                        <li class="navlink" data-slide="2">Services</li>
+                        <li class="navlink" data-slide="3">Process</li>
+                        <li class="navlink" data-slide="4">About Us</li>
+                        <li class="navlink" data-slide="5">Folio</li>
                         <li class="navlink" data-slide="6">Contact Us</li>
                     </ul>
                 </div>
@@ -42,13 +42,13 @@
 
                 <div id="content" class="grid_7">
                     <h1>ClassyDev</h1>
-                    <h2>Have a website that represents <b>you</b>.</h2>
+                    <h2>Polish your web presence.</h2>
                     <p><a href="https://twitter.com/classydev" target="_blank"><img src="images/twitter.png"></a></p>
                 </div>
                 <div id="decorative" class="grid_5 omega"></div>
                 <div class="grid_7"></div>
                 <div id="decorative" class="grid_5 omega">
-                    <img src="images/macbookpro-website.png">
+                    <!--<img src="images/macbookpro-website.png">-->
                 </div>
 
             </div>
@@ -58,28 +58,10 @@
 
         <div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
             <div class="container clearfix">
-
-                <div id="content" class="grid_12">
-                    <a href='aboutus.php'><h1>About Us</h1></a>
-                </div>
-                <div class='grid_6'>
-                    <div class='employee_profile' >
-                        <img src='#'>
-                        <p><b>Olivia Jeffers</b></p>
-                        <p>UI/UX Designer & Developer</p>
-                    </div>
-                </div>
-                <div class='grid_6 omega'>
-
-                    <div class='employee_profile' >
-                        <img src='#'>
-                        <p><b>Martin Molina</b></p>
-                        <p>Back-end Developer</p>
-                    </div>
-                </div>
-
-
-
+                <div class="grid_12 omega"><h1>Services</h1></div>
+               <div class="grid_4" ><p>1. Web/Mobile Design</p> </div>  <div class="grid_4" ><p>2. Development</p> </div>  <div class="grid_4 omega" ><p>3. Graphic Design</p> </div>
+               <div class="grid_4" > <p>4. Hosting</p> </div>  <div class="grid_4" > <p>5. SEO/Social Media</p> </div>  <div class="grid_4 omega" > <p>6. Maintenance</p> </div>
+               
             </div>
         </div>
 
@@ -89,13 +71,14 @@
             <div class="container clearfix">
 
                 <div id="our_process" class="grid_12">
-                    <h1>Our Process</h1>
+                    <h1>Process</h1>
                 </div>
-                <div class="grid_4" ><div class='process_button selected' number='1'>1</div></div>
-                <div class="grid_4"><div class='process_button' number='2'>2</div></div>
-                <div class="grid_4 omega"><div class='process_button' number='3'>3</div></div>
+                <div class="grid_3" ><div class='process_button selected' number='1'>1</div></div>
+                <div class="grid_3"><div class='process_button' number='2'>2</div></div>
+                <div class="grid_3"><div class='process_button' number='3'>3</div></div>
+                <div class="grid_3 omega"><div class='process_button' number='4'>4</div></div>
                 <div class='grid_12 omega'>
-                    <h2 class='process_copy'>We meet with you to understand what you need.</h2>
+                    <h2 class='process_copy'>We meet with you to understand your needs.</h2>
                 </div>
 
 
@@ -109,24 +92,47 @@
         <div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.5">
             <div class="container clearfix">
 
-                <div id="content" class="grid_12">
-                    <h1>Startups</h1>
-                    <h2><a href="http://jalxob.com/cool-kitten" target="_blank">Cool Kitten</a> was made by <a href="http://www.jalxob.com" target="_blank">Jalxob</a>.</h2>
-                    <p>Don't forget to follow me!</p>
-                    <p><a href="https://twitter.com/Jalxob" target="_blank"><img src="images/twitter.png"></a> <a href="http://dribbble.com/jalxob" target="_blank"><img src="images/dribbble.png"></a></p>
+                 <div id="content" class="grid_12">
+                    <a href='aboutus.php'><h1>About Us</h1></a>
                 </div>
+                <div class='grid_6'>
+                    <div class='employee_profile' >
+                        <img src='#'>
+                        <p><b>Olivia Jeffers</b></p>
+                        <p>Front-end & Design</p>
+                    </div>
+                </div>
+                <div class='grid_6 omega'>
 
+                    <div class='employee_profile' >
+                        <img src='#'>
+                        <p><b>Martin Molina</b></p>
+                        <p>Back-end & Business Strategy</p>
+                    </div>
+                </div>
+                                
             </div>
         </div>
 
         <div class="slide" id="slide5" data-slide="5" data-stellar-background-ratio="0.5">
             <div class="container clearfix">
 
-                <div id="content" class="grid_12">
-                    <h1>Portfolio</h1>
-                    <h2><a href="http://jalxob.com/cool-kitten" target="_blank">Cool Kitten</a> was made by <a href="http://www.jalxob.com" target="_blank">Jalxob</a>.</h2>
-                    <p>Don't forget to follow me!</p>
-                    <p><a href="https://twitter.com/Jalxob" target="_blank"><img src="images/twitter.png"></a> <a href="http://dribbble.com/jalxob" target="_blank"><img src="images/dribbble.png"></a></p>
+                <div id="content" class="grid_12"><h1>Folio</h1></div>
+                <div class="grid_6">
+                    <a href="http://www.braintribe.me"><img class="folio_image" src="images/folio1.png"></a>
+                    <br>
+                    We love startups! 
+                    <br>
+                    <br>
+                    <a href="http://www.braintribe.me"><b>braintribe.me</b></a> is a custom content-management system that allows users to easily share their favorite content with like-minded people.
+                </div>
+                <div class="grid_6 omega">
+                    <img class="folio_image" src="images/folio2.png">
+                    <br>
+                    Another example of our work. 
+                    <br>
+                    <br>
+                    <a href="http://www.oliviajeffers.info/#!saqsaywaman/copm"><b>Saqsaywaman</b></a> was built by the Inca c. 1450 AD and was deconstructed in 1536 by the Spanish after a long battle over the fortress. 
                 </div>
 
             </div>
@@ -136,10 +142,35 @@
             <div class="container clearfix">
 
                 <div id="content" class="grid_12">
-                    <h1>Contact Us</h1>
-                    <h2><a href="http://jalxob.com/cool-kitten" target="_blank">Cool Kitten</a> was made by <a href="http://www.jalxob.com" target="_blank">Jalxob</a>.</h2>
-                    <p>Don't forget to follow me!</p>
-                    <p><a href="https://twitter.com/Jalxob" target="_blank"><img src="images/twitter.png"></a> <a href="http://dribbble.com/jalxob" target="_blank"><img src="images/dribbble.png"></a></p>
+                </div>
+                <div class="grid_2"></div>
+                <div class="grid_8">
+                <form><h1>Contact Us</h1>
+                    <div class="grid_6">Your Name: <input placeholder="John Doe" tab-index="1" autofocus></div><div class="grid_6 omega">Your email: <input placeholder="john.doe@gmail.com" tab-index="2"></div>
+                    <br>
+                    <br>
+                    How we can help: 
+                    <br>
+                    <textarea tab-index="3"></textarea>
+                    <br>
+                    <br>
+                    <input type="submit" value="Submit">
+                </form>
+                </div>
+                <div class="grid_2 omega"></div>
+
+            </div>
+        </div>
+
+        <div class="slide" id="footer" data-slide="7" data-stellar-background-ratio="0.5" >
+            <div class="container clearfix" >
+
+                <div class="grid_12 omega">
+
+                </div>
+                <div class="grid_12 omega">
+                    Copyright 2014 (c) ClassyDev.com | All Rights Reserved
+                    <div class="navlink" data-slide="1" style="float: right">Back to the top >></div>
                 </div>
 
             </div>
@@ -150,14 +181,13 @@
         <script type="text/javascript" src="js/waypoints.min.js"></script>
         <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 
-        
+
         <!--timing function, all the same-->
         <script type="text/javascript" src="js/jquery-timing.min.js"></script>
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/--version--/jquery.min.js"></script>
         <script type="text/javascript" src="http://creativecouple.github.com/jquery-timing/jquery-timing.min.js"></script>
         <!-- <script type="text/javascript" src="js/scripts.min.js"></script> -->
-        
+
         <script type="text/javascript" src="js/scripts.js"></script>
-        
+
     </body>
 </html>
