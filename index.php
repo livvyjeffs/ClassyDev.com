@@ -149,7 +149,15 @@
         <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
         <script type="text/javascript" src="js/waypoints.min.js"></script>
         <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-        <script type="text/javascript" src="js/scripts.js"></script>
+
+        
+        <!--timing function, all the same-->
+        <script type="text/javascript" src="js/jquery-timing.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/--version--/jquery.min.js"></script>
+        <script type="text/javascript" src="http://creativecouple.github.com/jquery-timing/jquery-timing.min.js"></script>
         <!-- <script type="text/javascript" src="js/scripts.min.js"></script> -->
+        
+        <script type="text/javascript" src="js/scripts.js"></script>
+        
     </body>
 </html>

@@ -13,19 +13,18 @@ jQuery(document).ready(function($) {
 
         dataslide = $(this).attr('data-slide');
         if (direction === 'down') {
-            $('.navlink [data-slide="' + dataslide + '"]').addClass('active').prev().removeClass('active');
+            $('.navlink[data-slide="' + dataslide + '"]').addClass('active').prev().removeClass('active');
         }
         else {
-            $('.navlink [data-slide="' + dataslide + '"]').addClass('active').next().removeClass('active');
+            $('.navlink[data-slide="' + dataslide + '"]').addClass('active').next().removeClass('active');
         }
 
     });
     
     $('#slide3').waypoint(function(event, direction) {
 
-        $('.process_button[number=1]').delay(3000).selectbutton();
-        $('.process_button[number=2]').delay(9000).selectbutton();
-        $('.process_button[number=3]').delay(12000).selectbutton();
+        $.wait(3000,function(){$('.process_button[number=2]').selectbutton();});
+        $.wait(6000,function(){$('.process_button[number=3]').selectbutton();});
 
     });
 
@@ -37,10 +36,10 @@ jQuery(document).ready(function($) {
     });
     function goToByScroll(dataslide) {
         htmlbody.animate({
-            scrollTop: $('.slide[data-slide="' + dataslide + '"]').offset().top + 1
+            scrollTop: $('.slide[data-slide="' + dataslide + '"]').offset().top
         }, 2000, 'easeInOutQuint');
     }
-
+        
 
 
     links.click(function(e) {
@@ -55,8 +54,6 @@ jQuery(document).ready(function($) {
         dataslide = $(this).attr('data-slide');
         goToByScroll(dataslide);
     });
-
-
 
 
     processbutton.click(function(e) {
