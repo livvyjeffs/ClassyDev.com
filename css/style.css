@@ -6,6 +6,7 @@ body {
     font-size: 1em;
     color: #8a8683;
     background-color:#ffffff;
+    overflow-x: hidden;
 }
 img {
     max-width: 100%;
@@ -96,9 +97,8 @@ a:visited {
 
 .employee_profile img{
     width: 100%;
-    height: 300px;
-    background: yellow;
-    
+    height: auto;
+
 }
 
 .process_button{
@@ -157,7 +157,7 @@ textarea{
 
 input[type="submit"]{
     float: right;
-    
+
 }
 
 #footer{
@@ -167,30 +167,55 @@ input[type="submit"]{
     padding-bottom: 20px;
 }
 
+#slide1 .grid_7{
+    opacity:0.1;
+}
+
+.slideshow{
+    display: block;
+    float: right;
+    background: white;
+    width: 60%;
+    height: 65%;
+    bottom: 5%;
+    right: -100%;
+    opacity: 0;
+    border-radius: 10px;
+    position: relative;
+}
+
+
+
 /* Slide 1 */ 
 
 #slide1{
-    /*background: url('../images/saqsaywaman.png') no-repeat fixed;
-     -webkit-background-size: 100% auto;
-  -moz-background-size: 100% auto;
-  -o-background-size: 100% auto;
-  background-size: 100% 100%;*/
+    background: url('../images/lemonade_stand.jpg') no-repeat fixed;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    background-size: 100% auto;
     background-color:#ffffff;
+    padding-bottom: 50px;
 }
 
-#slide1 .container{
-    background: url('../images/bobslemonade_1.png') no-repeat;
+/*#slide1 .container{
+    background: url('../images/lemonade_stand.jpg') no-repeat;
     background-size: 100%;
-}
+}*/
 
 #slide1 #decorative img{
     margin-top: 50px;
     float: right;
 }
 
+#slide1 .grid_7{
+
+}
+
 #slide1 h1 {
     font-size: 3.8em;
     margin-top: 25px;
+    margin-left: 0;
     letter-spacing: -3px;
     line-height: 0px;
     color:white;
@@ -204,6 +229,7 @@ input[type="submit"]{
     line-height: 0px;
     padding-bottom:20px;
     font-weight: 400;
+    margin-left: 1em;
 }
 
 

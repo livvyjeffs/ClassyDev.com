@@ -1,7 +1,5 @@
 jQuery(document).ready(function($) {
 
-    slideshow();
-
     $(window).stellar();
     var links = $(document).find('.navlink');
     slide = $('.slide');
@@ -9,6 +7,8 @@ jQuery(document).ready(function($) {
     button = $('.button');
     mywindow = $(window);
     htmlbody = $('html,body');
+
+    slideshow();
 
     slide.waypoint(function(event, direction) {
 
@@ -40,6 +40,7 @@ jQuery(document).ready(function($) {
         if (mywindow.scrollTop() === 0) {
             $('.navlink [data-slide="1"]').addClass('active');
             $('.navlink [data-slide="2"]').removeClass('active');
+            $('#slide1').openslide(1);
         }
     });
     function goToByScroll(dataslide) {
@@ -95,11 +96,36 @@ jQuery(document).ready(function($) {
         };
     })(jQuery);
 
+    (function($) {
+        $.fn.openslide = function(number) {
+
+            $('#slide1 .grid_7').animate({opacity: 1.0}, 3000);
+
+            if ($(window).width() < 1000) {
+
+                $('.slideshow[number="' + number + '"]').animate({right: '20%', opacity: 0.8}, 3000);
+
+
+            } else {
+
+                $('.slideshow[number="' + number + '"]').animate({right: '0%', opacity: 0.8}, 3000);
+
+            }
+        };
+    })(jQuery);
+
     function slideshow() {
-        var slideContainer = $('#slide1 .container');
+
+        if (($(window).height() / $(window).width()) > 0.59) {
+            $('#slide1').css({'background-size': 'auto 100%'});
+        }
+
+        var slideContainer = $('.slideshow');
         var availheight = $(window).height();
-        slideContainer.css("height", (availheight * 0.6));
+        slideContainer.css("height", (availheight * 0.5));
     }
     ;
 
+    $(document).openslide(1);
+  
 });

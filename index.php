@@ -43,14 +43,9 @@
                 <div id="content" class="grid_7">
                     <h1>ClassyDev</h1>
                     <h2>Polish your web presence.</h2>
-                    <p><a href="https://twitter.com/classydev" target="_blank"><img src="images/twitter.png"></a></p>
                 </div>
-                <div id="decorative" class="grid_5 omega"></div>
-                <div class="grid_7"></div>
-                <div id="decorative" class="grid_5 omega">
-                    <!--<img src="images/macbookpro-website.png">-->
-                </div>
-
+                <div class="slideshow" number="1"></div>
+                
             </div>
         </div>
 
@@ -97,7 +92,7 @@
                 </div>
                 <div class='grid_6'>
                     <div class='employee_profile' >
-                        <img src='#'>
+                        <img src='images/olivia_bio.png'>
                         <p><b>Olivia Jeffers</b></p>
                         <p>Front-end & Design</p>
                     </div>
@@ -105,7 +100,7 @@
                 <div class='grid_6 omega'>
 
                     <div class='employee_profile' >
-                        <img src='#'>
+                        <img src='images/martin_bio.png'>
                         <p><b>Martin Molina</b></p>
                         <p>Back-end & Business Strategy</p>
                     </div>
@@ -119,12 +114,12 @@
 
                 <div id="content" class="grid_12"><h1>Folio</h1></div>
                 <div class="grid_6">
-                    <a href="http://www.braintribe.me"><img class="folio_image" src="images/folio1.png"></a>
+                    <a href="http://www.braintribe.me" target="#blank"><img class="folio_image" src="images/folio1.png"></a>
                     <br>
                     We love startups! 
                     <br>
                     <br>
-                    <a href="http://www.braintribe.me"><b>braintribe.me</b></a> is a custom content-management system that allows users to easily share their favorite content with like-minded people.
+                    <a href="http://www.braintribe.me" target="#blank"><b>braintribe.me</b></a> is a custom content-management system that allows users to easily share their favorite content with like-minded people.
                 </div>
                 <div class="grid_6 omega">
                     <img class="folio_image" src="images/folio2.png">
@@ -132,7 +127,7 @@
                     Another example of our work. 
                     <br>
                     <br>
-                    <a href="http://www.oliviajeffers.info/#!saqsaywaman/copm"><b>Saqsaywaman</b></a> was built by the Inca c. 1450 AD and was deconstructed in 1536 by the Spanish after a long battle over the fortress. 
+                    <a href="http://www.oliviajeffers.info/#!saqsaywaman/copm" target="#blank"><b>Saqsaywaman</b></a> was built by the Inca c. 1450 AD and was deconstructed in 1536 by the Spanish after a long battle over the fortress. 
                 </div>
 
             </div>
@@ -146,7 +141,7 @@
                 <div class="grid_2"></div>
                 <div class="grid_8">
                 <form><h1>Contact Us</h1>
-                    <div class="grid_6">Your Name: <input placeholder="John Doe" tab-index="1" autofocus></div><div class="grid_6 omega">Your email: <input placeholder="john.doe@gmail.com" tab-index="2"></div>
+                    <div class="grid_6">Your Name: <input placeholder="John Doe" tab-index="1"></div><div class="grid_6 omega">Your Email: <input placeholder="john.doe@gmail.com" tab-index="2"></div>
                     <br>
                     <br>
                     How we can help: 
