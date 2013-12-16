@@ -55,10 +55,14 @@
                 <div class="grid_12 omega"><h1>Services</h1></div>
                 <div class="grid_12 omega" type="container">
                     <div class="grid_8">
-                        <div class="grid_4"><div class="service selected"><p>Design</p></div></div><div class="grid_4"><div class="service"><p>Development</p></div></div><div class="grid_4 omega"><div class="service"><p>Graphics</p></div></div>  
-                        <div class="grid_4"><div class="service"><p>Hosting</p></div></div><div class="grid_4"><div class="service"><p>Marketing</p></div></div><div class="grid_4 omega"><div class="service"><p>Maintenance</p></div></div> 
+                        <div class="grid_4"><div class="service selected"><img src="images/service_symbols/design.png"><p>Design</p></div></div>
+                        <div class="grid_4"><div class="service"><img src="images/service_symbols/development.png"><p>Development</p></div></div>
+                        <div class="grid_4 omega"><div class="service"><img src="images/service_symbols/graphics.png"><p>Graphics</p></div></div>  
+                        <div class="grid_4"><div class="service"><img src="images/service_symbols/hosting.png"><p>Hosting</p></div></div>
+                        <div class="grid_4"><div class="service"><img src="images/service_symbols/marketing.png"><p>Marketing</p></div></div>
+                        <div class="grid_4 omega"><div class="service"><img src="images/service_symbols/maintenance.png"><p>Maintenance</p></div></div> 
                     </div>
-                    <div class="grid_4 omega">
+                    <div id="services_copy">
                         <h1>I am copy.</h1>
                     </div>
                 </div>

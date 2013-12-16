@@ -190,10 +190,9 @@ input[type="submit"]{
 
 #slide2 .grid_12.omega[type="container"]{
     border-radius: 10px;
-    border: 1px solid black;
-    background: white;
     color: #8a8683;
     padding-bottom: 1em;
+    position: relative;
 }
 
 #slide2 .grid_12.omega[type="container"] *{
@@ -204,29 +203,44 @@ input[type="submit"]{
     margin: 0;
 }
 
+#services_copy{
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    top: 1em; bottom: 1em; right: 1em;
+    width: 33%;
+    position: absolute;
+}
+
 .service{
     margin: 1em 0 0 1em;
-    border: 1px #8a8683;
-    background: purple;
     position: relative;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
 }
 
 .service:hover{
     cursor: pointer;
-    opacity: 0.5;
+    background: rgba(255, 255, 255, 0.9);
+    font-weight: bold;
 }
 
 .service.selected{
-    opacity: 0.5;
+    background: rgba(255, 255, 255, 0.9);
+    font-weight: bold;
 }
 
 .service p{
     width: 100%;
     text-align: center;
     position: absolute;
-    bottom: 1em;
+    bottom: 2.5%;
 }
 
+.service img{
+    width: 80%;
+    height: auto;
+    margin: 5% 10% 0 10%;
+}
 
 
 /* Slide 1 */ 
@@ -286,9 +300,9 @@ input[type="submit"]{
     color:#ffffff;
 }
 #slide2 h1 {
-    font-size: 3.8em;
+    font-size: 2.5em;
+    margin: 0.5em;
     letter-spacing: -3px;
-    line-height: 0px;
     color:#ffffff;
     font-weight: 700;
 }

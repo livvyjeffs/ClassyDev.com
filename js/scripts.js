@@ -7,6 +7,8 @@ jQuery(document).ready(function($) {
     button = $('.button');
     mywindow = $(window);
     htmlbody = $('html,body');
+    services = $('.service');
+    
     var slide_enter_time = 500;
     var slide_exit_time = 500;
     var slide_wait_time = 2000;
@@ -63,6 +65,12 @@ jQuery(document).ready(function($) {
         e.preventDefault();
         dataslide = $(this).attr('data-slide');
         goToByScroll(dataslide);
+    });
+    
+    services.click(function(e) {
+        e.preventDefault();
+        $('.service.selected').removeClass("selected");
+        $(this).addClass("selected");
     });
 
 
