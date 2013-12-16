@@ -12,9 +12,6 @@ jQuery(document).ready(function($) {
     var slide_wait_time = 2000;
     var slide_cycle = slide_enter_time + slide_wait_time + slide_exit_time;
 
-    slideshow();
-   
-
     slide.waypoint(function(event, direction) {
 
         dataslide = $(this).attr('data-slide');
@@ -156,7 +153,7 @@ jQuery(document).ready(function($) {
         };
     })(jQuery);
 
-    function slideshow() {
+    function setSizes() {
 
         if (($(window).height() / $(window).width()) > 0.59) {
             $('#slide1').css({'background-size': 'auto 100%'});
@@ -166,11 +163,16 @@ jQuery(document).ready(function($) {
         var availheight = $(window).height();
         slideContainer.css("height", (availheight - 250));
         slideContainer.css("max-height", 500);
+        
+        $('.service').height($('.service').width());
 
     }
     ;
 
- mywindow.runslideshow();
- mywindow.repeat((3 * slide_cycle)).runslideshow();
+    setSizes();
+    mywindow.runslideshow();
+    mywindow.repeat((3 * slide_cycle)).runslideshow();
+    
+    
 
 });

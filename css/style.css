@@ -188,6 +188,46 @@ input[type="submit"]{
     background: red;
 }
 
+#slide2 .grid_12.omega[type="container"]{
+    border-radius: 10px;
+    border: 1px solid black;
+    background: white;
+    color: #8a8683;
+    padding-bottom: 1em;
+}
+
+#slide2 .grid_12.omega[type="container"] *{
+    color: #8a8683;
+}
+
+#slide2 .grid_8, #slide2 .grid_8 > div{
+    margin: 0;
+}
+
+.service{
+    margin: 1em 0 0 1em;
+    border: 1px #8a8683;
+    background: purple;
+    position: relative;
+}
+
+.service:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.service.selected{
+    opacity: 0.5;
+}
+
+.service p{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 1em;
+}
+
+
 
 /* Slide 1 */ 
 
