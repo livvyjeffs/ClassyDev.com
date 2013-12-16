@@ -7,8 +7,13 @@ jQuery(document).ready(function($) {
     button = $('.button');
     mywindow = $(window);
     htmlbody = $('html,body');
+    var slide_enter_time = 500;
+    var slide_exit_time = 500;
+    var slide_wait_time = 2000;
+    var slide_cycle = slide_enter_time + slide_wait_time + slide_exit_time;
 
     slideshow();
+   
 
     slide.waypoint(function(event, direction) {
 
@@ -40,7 +45,7 @@ jQuery(document).ready(function($) {
         if (mywindow.scrollTop() === 0) {
             $('.navlink [data-slide="1"]').addClass('active');
             $('.navlink [data-slide="2"]').removeClass('active');
-            $('#slide1').openslide(1);
+
         }
     });
     function goToByScroll(dataslide) {
@@ -98,19 +103,56 @@ jQuery(document).ready(function($) {
 
     (function($) {
         $.fn.openslide = function(number) {
+     
+            var subtext = $('#slide1 h2');
+            var image;
+            var image_pos;
 
-            $('#slide1 .grid_7').animate({opacity: 1.0}, 3000);
+            console.log('slide ' + number);
+            
+            image = $('.slideshow[number="' + number + '"]');
+
+            switch (number) {
+                case 1:
+                    subtext.text('Polish your web presence.');
+                    break;
+                case 2:
+                    subtext.text('Access on-the-go.');
+                    break;
+                case 3:
+                    subtext.text('Broadcast your brand.');
+                    break;
+            }
+
+            
 
             if ($(window).width() < 1000) {
-
-                $('.slideshow[number="' + number + '"]').animate({right: '20%', opacity: 0.8}, 3000);
-
-
+                image_pos = '20%';
             } else {
-
-                $('.slideshow[number="' + number + '"]').animate({right: '0%', opacity: 0.8}, 3000);
-
+                image_pos = '-40%';
             }
+
+            image.animate({right: image_pos, opacity: 1.0}, slide_enter_time).delay(slide_wait_time).animate({left: '-100%', opacity: 0}, slide_exit_time).wait().remove();
+            subtext.animate({opacity: 1.0}, slide_enter_time).delay(slide_wait_time).animate({opacity: 0}, slide_exit_time).wait().text('');
+            
+            if(number < 3){
+                $('#slide1 .container').append('<div class="slideshow" number="' + (number + 1) + '"></div>');
+            } else{
+                $('#slide1 .container').append('<div class="slideshow" number="1"></div>');
+            }
+            
+        };
+    })(jQuery);
+
+    (function($) {
+        $.fn.runslideshow = function() {
+            $('#slide1').openslide(1);
+            $.wait((slide_cycle), function() {
+                $('#slide1').openslide(2);
+            });
+            $.wait((2 * slide_cycle), function() {
+                $('#slide1').openslide(3);
+            });
         };
     })(jQuery);
 
@@ -120,12 +162,15 @@ jQuery(document).ready(function($) {
             $('#slide1').css({'background-size': 'auto 100%'});
         }
 
-        var slideContainer = $('.slideshow');
+        var slideContainer = $('#slide1 .container');
         var availheight = $(window).height();
-        slideContainer.css("height", (availheight * 0.5));
+        slideContainer.css("height", (availheight - 250));
+        slideContainer.css("max-height", 500);
+
     }
     ;
 
-    $(document).openslide(1);
-  
+ mywindow.runslideshow();
+ mywindow.repeat((3 * slide_cycle)).runslideshow();
+
 });

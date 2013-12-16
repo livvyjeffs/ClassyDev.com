@@ -40,12 +40,11 @@
         <div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
             <div class="container clearfix">
 
-                <div id="content" class="grid_7">
+                <div id="content" class="grid_12 omega">
                     <h1>ClassyDev</h1>
                     <h2>Polish your web presence.</h2>
                 </div>
                 <div class="slideshow" number="1"></div>
-                
             </div>
         </div>
 
@@ -181,8 +180,10 @@
         <script type="text/javascript" src="js/jquery-timing.min.js"></script>
         <script type="text/javascript" src="http://creativecouple.github.com/jquery-timing/jquery-timing.min.js"></script>
         <!-- <script type="text/javascript" src="js/scripts.min.js"></script> -->
-
+          <script type="text/javascript" src="js/jquery.cycle2.js"></script>
+        
         <script type="text/javascript" src="js/scripts.js"></script>
+    
 
     </body>
 </html>

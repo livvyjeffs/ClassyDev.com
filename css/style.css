@@ -141,7 +141,7 @@ img[src='#']{
     box-shadow: 3px 3px 10px black;
 }
 
-input{
+input, textarea{
     padding: 5px;
 }
 
@@ -150,7 +150,7 @@ input:focus, textarea:focus{
 }
 
 textarea{
-    width: 100%;
+    width: calc(100% - 10px);
     height: 200px;
     resize: none;
 }
@@ -167,23 +167,26 @@ input[type="submit"]{
     padding-bottom: 20px;
 }
 
-#slide1 .grid_7{
-    opacity:0.1;
-}
 
 .slideshow{
-    display: block;
-    float: right;
+    display: inline-block;
     background: white;
     width: 60%;
-    height: 65%;
-    bottom: 5%;
+    height: calc(100% - 6em);
+    top: 1%;
     right: -100%;
     opacity: 0;
     border-radius: 10px;
     position: relative;
 }
 
+.slideshow[number="2"]{
+    background: skyblue;
+}
+
+.slideshow[number="3"]{
+    background: red;
+}
 
 
 /* Slide 1 */ 
