@@ -138,23 +138,24 @@ jQuery(document).ready(function($) {
             }
 
             image.animate({right: image_pos, opacity: 1.0}, slide_enter_time).delay(slide_wait_time).animate({left: '-100%', opacity: 0}, slide_exit_time).wait().remove();
-            subtext.animate({opacity: 1.0}, slide_enter_time).delay(slide_wait_time).animate({opacity: 0}, slide_exit_time).wait().text('');
-            
+                        
             if(number < 3){
                 $('#slide1 .container').append('<div class="slideshow" number="' + (number + 1) + '"></div>');
             } else{
                 $('#slide1 .container').append('<div class="slideshow" number="1"></div>');
             }
-            
+                        
         };
     })(jQuery);
 
     (function($) {
         $.fn.runslideshow = function() {
             $('#slide1').openslide(1);
+            
             $.wait((slide_cycle), function() {
                 $('#slide1').openslide(2);
             });
+            
             $.wait((2 * slide_cycle), function() {
                 $('#slide1').openslide(3);
             });
