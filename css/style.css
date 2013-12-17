@@ -331,6 +331,11 @@ input[type="submit"]{
     padding-top: 200px;
 }
 
+#slide3 h1, h2{
+    color: #8a8683;
+    text-shadow: none;
+}
+
 #slide3 h2 {
     font-size: 2em;
     color: #8a8683;
@@ -348,7 +353,7 @@ input[type="submit"]{
 
 
 
-/* Slide 4 */
+/* Slide 4 - About Us */
 
 #slide4{
     background-image:url('../images/martiniglasses.png');
@@ -356,6 +361,11 @@ input[type="submit"]{
     color:#ffffff;
 }
 
+/* Slide 5 - Folio */
+#slide5 h1, h2{
+    color: #8a8683;
+    text-shadow: none;
+}
 
 /* Slide 6 - Contact Us */
 #slide6{
