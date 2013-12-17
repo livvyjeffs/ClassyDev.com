@@ -12,8 +12,36 @@
         <link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
         <link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
         <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+        <script type="text/javascript" src="js/ajax.js"></script>
         <!-- <link rel="stylesheet" href="css/style.min.css" type="text/css" media="screen"> -->
         <!--[if IE]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+        <script>
+            function contactAdmin(e){
+                e.preventDefault();
+                var name = document.getElementById("name").value;
+                var email = document.getElementById("email").value;
+                var message = document.getElementById("message").value;
+                if(name === "" || email === "" || message === ""){
+                    alert("Please fill out all of the form data.")
+                    return;
+                }
+                var ajax = new ajaxObj("POST","php_includes/mailAdmin.php");
+                ajax.onreadystatechange = function(){
+                    if(ajaxReturn(ajax) === true){
+                        if(ajax.responseText === "success"){
+                            alert("Thanks for your interest! We'll get back to you in about one business day!");
+                            document.getElementById("name").value = "";
+                            document.getElementById("email").value = "";
+                            document.getElementById("message").value = "";
+                        }
+                        else{
+                            alert("There was an error sending you message, please try again.")
+                        }
+                    }
+                }
+                ajax.send("name="+name+"&email="+email+"&message="+message);
+            }
+        </script>
     </head>
 
     <body>
@@ -152,15 +180,15 @@
                 <div class="grid_2"></div>
                 <div class="grid_8">
                 <form>
-                    <div class="grid_6">Your Name: <input placeholder="John Doe" tab-index="1"></div><div class="grid_6 omega">Your Email: <input placeholder="john.doe@gmail.com" tab-index="2"></div>
+                    <div class="grid_6">Your Name: <input id="name" placeholder="John Doe" tab-index="1"></div><div class="grid_6 omega">Your Email: <input id="email" placeholder="john.doe@gmail.com" tab-index="2"></div>
                     <br>
                     <br>
                     How we can help: 
                     <br>
-                    <textarea tab-index="3"></textarea>
+                    <textarea id="message" tab-index="3"></textarea>
                     <br>
                     <br>
-                    <input type="submit" value="Submit">
+                    <input type="submit" value="Submit" onclick="contactAdmin(event);">
                 </form>
                 </div>
                 <div class="grid_2 omega"></div>
