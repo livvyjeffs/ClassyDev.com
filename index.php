@@ -55,15 +55,15 @@
                 <div class="grid_12 omega"><h1>Services</h1></div>
                 <div class="grid_12 omega" type="container">
                     <div class="grid_8">
-                        <div class="grid_4"><div class="service selected"><img src="images/service_symbols/design.png"><p>Design</p></div></div>
-                        <div class="grid_4"><div class="service"><img src="images/service_symbols/development.png"><p>Development</p></div></div>
-                        <div class="grid_4 omega"><div class="service"><img src="images/service_symbols/graphics.png"><p>Graphics</p></div></div>  
-                        <div class="grid_4"><div class="service"><img src="images/service_symbols/hosting.png"><p>Hosting</p></div></div>
-                        <div class="grid_4"><div class="service"><img src="images/service_symbols/marketing.png"><p>Marketing</p></div></div>
-                        <div class="grid_4 omega"><div class="service"><img src="images/service_symbols/maintenance.png"><p>Maintenance</p></div></div> 
+                        <div class="grid_4"><div class="service selected" number="1"><img src="images/service_symbols/design.png"><p>Design</p></div></div>
+                        <div class="grid_4"><div class="service" number="2"><img src="images/service_symbols/development.png"><p>Development</p></div></div>
+                        <div class="grid_4 omega"><div class="service" number="3"><img src="images/service_symbols/graphics.png"><p>Graphics</p></div></div>  
+                        <div class="grid_4"><div class="service" number="4"><img src="images/service_symbols/hosting.png"><p>Hosting</p></div></div>
+                        <div class="grid_4"><div class="service" number="5"><img src="images/service_symbols/marketing.png"><p>Marketing</p></div></div>
+                        <div class="grid_4 omega"><div class="service" number="6"><img src="images/service_symbols/maintenance.png"><p>Maintenance</p></div></div> 
                     </div>
                     <div id="services_copy">
-                        <h1>I am copy.</h1>
+                        <h2><span>Design</span><br></br>A well-designed website is like a friendly person. They're a pleasure to interact with! <br></br> We design responsive, mobile-friendly sites that draw customers in and make them smile.</h2>
                     </div>
                 </div>
             </div>
@@ -173,7 +173,7 @@
 
                 </div>
                 <div class="grid_12 omega">
-                    Copyright 2014 (c) ClassyDev.com | All Rights Reserved
+                    Copyright 2014 &copy; ClassyDev.com | All Rights Reserved
                     <div class="navlink" data-slide="1" style="float: right">Back to the top >></div>
                 </div>
 

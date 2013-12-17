@@ -71,6 +71,42 @@ jQuery(document).ready(function($) {
         e.preventDefault();
         $('.service.selected').removeClass("selected");
         $(this).addClass("selected");
+        
+        var copy = $('#services_copy h2');
+        
+        switch($(this).attr("number")) {
+            case '1':
+                copy.css("font-size", '');
+                copy.css("line-height", '1.75em');
+                copy.html('<span>Design</span><br></br>A well-designed website is like a friendly person. They\'re a pleasure to interact with! <br></br><br></br> We design responsive, mobile-friendly sites that draw customers in and make them smile.');
+                break;
+            case '2':
+                copy.css("font-size", '1.2em');
+                copy.css("line-height", '');
+                copy.html('<span>Development</span><br></br>Clean, efficient, and readable. Making a beautiful site that works is only half the battle. <br></br> If your underlying code isn\'t up to industry standards then extension, modification, and maintenance become a headache! <br></br> This is why we take so much pride in the elegant quality of our code.');
+                break;
+            case '3':
+                copy.css("font-size", '');
+                copy.css("line-height", '1.75em');
+                copy.html('<span>Graphics</span><br></br>Graphics are the key to a stellar first impression. <br></br>In addition to our in-house Photoshop fiend, ClassyDev maintains a network of talented graphic artists to supplement your impeccably styled website!');
+                break;
+            case '4':
+                copy.css("font-size", '');
+                copy.css("line-height", '1.75em');
+                copy.html('<span>Hosting</span><br></br>No one likes the boring job of configuring and optimizing production servers - except for us! <br></br> We are happy to take care of all the dirty work and be the one-stop solution that your business needs.');
+                break;
+            case '5':
+                copy.css("font-size", '');
+                copy.css("line-height", '1.75em');
+                copy.html('<span>Marketing</span><br></br>The future medium for organic brand-building is here. And it\'s name is social media. <br></br> Through our proprietary search engine optimization (SEO) and social media integration techniques we broadcast your brand for all the world to see.');
+                break;
+            case '6':
+                copy.css("font-size", '1.2em');
+                copy.css("line-height", '');
+                copy.html('<span>Maintenance</span><br></br>Well before the dazzling days of high technology, reliability and trust were the cornerstones of good business. <br></br> Here at ClassyDev.com we believe that should never change. Therefore our websites include a full year of maintenance and support. <br></br> At the end of the day, we keep it classy.');
+                break;
+        }
+        
     });
 
 
@@ -91,7 +127,7 @@ jQuery(document).ready(function($) {
                     break;
                 case '2':
                     $('.process_button[number="2"]').addClass('selected');
-                    copy = 'We present you with designs for a technical solution.';
+                    copy = 'We present you with creative designs <br> for a technical solution.';
                     break;
                 case '3':
                     $('.process_button[number="3"]').addClass('selected');
@@ -128,11 +164,9 @@ jQuery(document).ready(function($) {
                     subtext.text('Broadcast your brand.');
                     break;
             }
-
             
-
             if ($(window).width() < 1000) {
-                image_pos = '20%';
+                image_pos = '-20%';
             } else {
                 image_pos = '-40%';
             }
@@ -174,14 +208,17 @@ jQuery(document).ready(function($) {
         slideContainer.css("max-height", 500);
         
         $('.service').height($('.service').width());
+        
 
     }
     ;
-
+    
     setSizes();
     mywindow.runslideshow();
     mywindow.repeat((3 * slide_cycle)).runslideshow();
     
+    window.onresize = function() {
+        setSizes();
+    };
     
-
 });
