@@ -6,7 +6,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
-        <title>Cool Kitten: A parallax scrolling responsive framework</title>
+        <title>ClassyDev: Web Design and Development</title>
+        <link rel="shortcut icon" href="images/classydev-icon.ico" />
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
         <link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">

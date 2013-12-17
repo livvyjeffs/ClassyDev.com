@@ -222,11 +222,6 @@ jQuery(document).ready(function($) {
         if (($(window).height() / $(window).width()) > 0.59) {
             $('#slide1').css({'background-size': 'auto 100%'});
         }
-
-        var slideContainer = $('#slide1 .container');
-        var availheight = $(window).height();
-        slideContainer.css("height", (availheight - 250));
-        slideContainer.css("max-height", 500);
         
         $('.service').height($('.service').width());
         

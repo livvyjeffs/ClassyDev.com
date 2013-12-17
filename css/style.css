@@ -193,7 +193,7 @@ input[type="submit"]{
     display: inline-block;
     background: white;
     width: 60%;
-    height: calc(100% - 6em);
+    height: calc(100% - 10em);
     top: 1%;
     right: -100%;
     opacity: 0;
@@ -201,12 +201,22 @@ input[type="submit"]{
     position: relative;
 }
 
+.slideshow[number="1"]{
+    background: url('../images/laptop_image.png') no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
 .slideshow[number="2"]{
-    background: skyblue;
+    background: url('../images/mobile_image.png') no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 .slideshow[number="3"]{
-    background: red;
+    background: url('../images/bobslemonade_3.png') no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 #slide2 .grid_12.omega[type="container"]{
@@ -290,10 +300,10 @@ input[type="submit"]{
     padding-bottom: 50px;
 }
 
-/*#slide1 .container{
-    background: url('../images/lemonade_stand.jpg') no-repeat;
-    background-size: 100%;
-}*/
+#slide1 .container{
+    height: 500px;
+}
+
 
 #slide1 #decorative img{
     margin-top: 50px;
