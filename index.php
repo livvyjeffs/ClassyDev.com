@@ -146,10 +146,11 @@
             <div class="container clearfix">
 
                 <div id="content" class="grid_12">
+                    <h1>Contact Us</h1>
                 </div>
                 <div class="grid_2"></div>
                 <div class="grid_8">
-                <form><h1>Contact Us</h1>
+                <form>
                     <div class="grid_6">Your Name: <input placeholder="John Doe" tab-index="1"></div><div class="grid_6 omega">Your Email: <input placeholder="john.doe@gmail.com" tab-index="2"></div>
                     <br>
                     <br>

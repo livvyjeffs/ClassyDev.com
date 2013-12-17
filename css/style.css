@@ -26,7 +26,7 @@ a:visited {
 
 h1{
     font-size: 2.5em;
-    margin: 0.5em;
+    margin: 0.5em 0 0.5em 0;
     letter-spacing: -3px;
     color:#ffffff;
     text-shadow: 1px 1px 10px black;
@@ -236,7 +236,7 @@ input[type="submit"]{
     font-size: 1.25em;
     margin: 0.5em;
     color: #8a8683;    
-    line-height: 1.5em;
+    line-height: 1.75em;
 }
 
 #services_copy span{
@@ -324,10 +324,11 @@ input[type="submit"]{
 
 
 
-/* Slide 3 */ 
+/* Slide 3 - Process*/ 
 
 #slide3{
     background-color:#ffffff;
+    padding-top: 200px;
 }
 
 #slide3 h2 {

@@ -42,15 +42,36 @@ jQuery(document).ready(function($) {
 
     mywindow.scroll(function() {
         if (mywindow.scrollTop() === 0) {
-            $('.navlink [data-slide="1"]').addClass('active');
-            $('.navlink [data-slide="2"]').removeClass('active');
+            $('.navlink[data-slide="1"]').addClass('active');
+            $('.navlink[data-slide="2"]').removeClass('active');
 
         }
     });
+
+    mywindow.scroll(function() {
+        if (mywindow.scrollTop() + mywindow.height() === $(document).height()) {
+
+            $('.navlink[data-slide="5"]').removeClass('active');
+            $('.navlink[data-slide="6"]').addClass('active');
+        }
+    });
+    
     function goToByScroll(dataslide) {
-        htmlbody.animate({
-            scrollTop: $('.slide[data-slide="' + dataslide + '"]').offset().top
-        }, 2000, 'easeInOutQuint');
+        
+        var window_scroll = $(window).scrollTop();
+        var goto_scroll = $('.slide[data-slide="' + dataslide + '"]').offset().top;
+
+        if (window_scroll > goto_scroll) {
+            htmlbody.animate({
+                scrollTop: goto_scroll - 10
+            }, 2000, 'easeInOutQuint');
+        } else if (window_scroll < goto_scroll) {
+            htmlbody.animate({
+                scrollTop: goto_scroll + 10
+            }, 2000, 'easeInOutQuint');
+        }
+        
+        
     }
 
 
@@ -77,32 +98,32 @@ jQuery(document).ready(function($) {
         switch($(this).attr("number")) {
             case '1':
                 copy.css("font-size", '');
-                copy.css("line-height", '1.75em');
+                copy.css("line-height", '');
                 copy.html('<span>Design</span><br></br>A well-designed website is like a friendly person. They\'re a pleasure to interact with! <br></br><br></br> We design responsive, mobile-friendly sites that draw customers in and make them smile.');
                 break;
             case '2':
                 copy.css("font-size", '1.2em');
-                copy.css("line-height", '');
+                copy.css("line-height", '1.5em');
                 copy.html('<span>Development</span><br></br>Clean, efficient, and readable. Making a beautiful site that works is only half the battle. <br></br> If your underlying code isn\'t up to industry standards then extension, modification, and maintenance become a headache! <br></br> This is why we take so much pride in the elegant quality of our code.');
                 break;
             case '3':
                 copy.css("font-size", '');
-                copy.css("line-height", '1.75em');
+                copy.css("line-height", '');
                 copy.html('<span>Graphics</span><br></br>Graphics are the key to a stellar first impression. <br></br>In addition to our in-house Photoshop fiend, ClassyDev maintains a network of talented graphic artists to supplement your impeccably styled website!');
                 break;
             case '4':
                 copy.css("font-size", '');
-                copy.css("line-height", '1.75em');
+                copy.css("line-height", '');
                 copy.html('<span>Hosting</span><br></br>No one likes the boring job of configuring and optimizing production servers - except for us! <br></br> We are happy to take care of all the dirty work and be the one-stop solution that your business needs.');
                 break;
             case '5':
                 copy.css("font-size", '');
-                copy.css("line-height", '1.75em');
+                copy.css("line-height", '');
                 copy.html('<span>Marketing</span><br></br>The future medium for organic brand-building is here. And it\'s name is social media. <br></br> Through our proprietary search engine optimization (SEO) and social media integration techniques we broadcast your brand for all the world to see.');
                 break;
             case '6':
                 copy.css("font-size", '1.2em');
-                copy.css("line-height", '');
+                copy.css("line-height", '1.5em');
                 copy.html('<span>Maintenance</span><br></br>Well before the dazzling days of high technology, reliability and trust were the cornerstones of good business. <br></br> Here at ClassyDev.com we believe that should never change. Therefore our websites include a full year of maintenance and support. <br></br> At the end of the day, we keep it classy.');
                 break;
         }
@@ -209,7 +230,6 @@ jQuery(document).ready(function($) {
         
         $('.service').height($('.service').width());
         
-
     }
     ;
     
